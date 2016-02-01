@@ -1,0 +1,89 @@
+body{
+    font-family: sans-serif;
+}
+.button{
+    background: #00215E;
+    text-decoration: none;
+    color: #fff;
+    /*width: 100px;
+    height: 30px;*/
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 30px;
+}
+.button:hover{
+    background: #66799e;
+    border-color: #00215E;
+}
+
+header{
+    background: #000;
+    color: #fff;
+    font-size: 28px;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    
+}
+
+#kat-image{
+    width: 100%;
+}
+
+.counter{
+    display:in-line;
+    margin: 10px 10px;
+}
+
+/*List Styles*/
+#kat-list{
+  list-style : none;
+  height : 700px;
+  overflow : scroll;
+}
+
+#kat-list li{
+    height : 100px;
+    width : 300px;
+    margin : 10px 0px;
+}
+
+.list-container p{
+    float: left;
+    line-height: 100%;
+    margin-left: 20px;
+    padding: 25px 0px;
+
+}
+
+.list-thumbnail-container{
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.list-thumbnail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: none;
+    width: 160px; /* adjust to your pleasure */
+
+}
+
+/*Alignment Classes*/
+.center{
+    text-align : center;
+}
+
+.left{
+    float : left;
+}
+
+.right{
+    float : right;
+}
