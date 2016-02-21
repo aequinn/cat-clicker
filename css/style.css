@@ -1,21 +1,6 @@
 body{
     font-family: sans-serif;
 }
-.button{
-    background: #00215E;
-    text-decoration: none;
-    color: #fff;
-    /*width: 100px;
-    height: 30px;*/
-    line-height: 30px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px 30px;
-}
-.button:hover{
-    background: #66799e;
-    border-color: #00215E;
-}
 
 header{
     background: #000;
@@ -28,7 +13,22 @@ header{
     
 }
 
-#kat-image{
+input{
+    width : 95%;
+}
+
+button{
+    background-color: #3f3f3f;
+    color: #aaa;
+    border:none;
+    height: 40px;
+    width: 65px;
+    border-radius: 5px;
+    margin: 5px;
+    
+}
+
+.kat-image{
     width: 100%;
 }
 
@@ -37,14 +37,18 @@ header{
     margin: 10px 10px;
 }
 
+.selected{
+    background-color: #ccc;
+}
+
 /*List Styles*/
-#kat-list{
+ul{
   list-style : none;
   height : 700px;
   overflow : scroll;
 }
 
-#kat-list li{
+ul li{
     height : 100px;
     width : 300px;
     margin : 10px 0px;
@@ -73,6 +77,11 @@ header{
     max-width: none;
     width: 160px; /* adjust to your pleasure */
 
+}
+
+/*Administration Styles*/
+#admin-panel{
+    display: none;
 }
 
 /*Alignment Classes*/

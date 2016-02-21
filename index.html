@@ -7,38 +7,65 @@
         <meta content="A cute little cat to click on" name="description">
         <meta content="Anthony Quinn" name="author">
         
-        <title>Kat Klicks</title>
+        <title>Kat Klicker 2000</title>
         <link rel="stylesheet" href="css/gridly.min.css">
         <link rel="stylesheet" href="css/gridly-col-widths.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
+        
     </head>
     <body>
         <div class="row">
             <div class="col">
                 <header>
-                    Kat Klicker
+                    Kat Klicker 2000
+                    <button id="admin-button" class="right">Admin</button>
                 </header>
             </div>
         </div>
         <div class="row">
             <aside class="col-fourth">
-                <h3 id="kat-1-Name" class="center">List of Kute Kats</h3>
+                <h3 class="center">Kat List</h3>
                 <ul id="kat-list">
                 </ul>
             </aside>
             <main class="col">
                 <div class="counter">
-                    <h2 class="center">Kute Klicks Kounter</h2>
+                    <h2 class="center">Kute Klicks</h2>
                     <div class="row">
                         <div class="col">
                             <p class="center">Total: <strong id="kat-klicks">0</strong></p>
-                            <img id="kat-image" alt="Select an image to vote">
+                            <a href="#">
+                                <img id="kat-image" class="kat-image" alt="Select an image to vote">
+                            </a>
+                            <p id="no-image-selection">Please select a cat from the list to begin voting.</p>
                         </div>
                     </div>
                 </div>
             </main>
+            <aside class="col-quarter" class="admin-panel" id="admin-panel">
+                <h3>Admin</h3>
+                <form id="admin-form">
+                    <p>
+                        <label for="kat-name">Name: </label>
+                        <input id="kat-name" name="kat-name" type="text">
+                    </p>
+                    <p>
+                        <label for="kat-url">URL: </label>
+                        <input id="kat-url" name="kat-url" type="text">
+                    </p>
+                    <p>
+                        <label for="kat-kount">Klicks: </label>
+                        <input id="kat-kount" name="kat-klicks" type="text">
+                    </p>
+                    <p>
+                        <a href="#" id="cancel">Cancel</a>
+                        <button id="save" type="submit">Save</button>
+                    </p>
+                </form>
+            </aside>
         </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+       <script src="js/main.js"></script>
     </body>
 </html>
    
